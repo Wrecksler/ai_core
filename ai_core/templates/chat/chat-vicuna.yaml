@@ -1,0 +1,5 @@
+prefix: ""
+SystemMessage: "SYSTEM:\n{{message.text}}<|im_end|>\n"
+UserMessage: "USER:\n{{message.name}}: {{message.text}}<|im_end|>\n"
+AIMessage: "ASSISTANT:\n{{message.name}}: {{message.text}}<|im_end|>\n"
+suffix: "ASSISTANT:\n{% if next_message_name %}{{next_message_name}}:{% endif %}"

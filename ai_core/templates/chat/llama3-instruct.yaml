@@ -1,0 +1,6 @@
+prefix: ""
+# SystemMessage: "<|begin_of_text|><|start_header_id|>system<|end_header_id|>\n\n{{message.text}}"
+SystemMessage: "<|start_header_id|>system<|end_header_id|>\n\n{{message.text}}"
+UserMessage: "<|eot_id|><|start_header_id|>user<|end_header_id|>\n\n{{message.name}}: {{message.text}}"
+AIMessage: "<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n{{message.name}}: {{message.text}}"
+suffix: "<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n{% if next_message_name %}{{next_message_name}}:{% endif %}"

@@ -1,0 +1,6 @@
+temperature: 1.0
+temperature_last: true
+smoothing_factor: 0.23
+min_p: 0.142
+repetition_penalty: 1.07
+stop: ["<|im_end|>", "|im_end|", "<s>", "</s>", "<|eot_id|>"]  

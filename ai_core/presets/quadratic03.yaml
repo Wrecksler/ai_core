@@ -1,0 +1,5 @@
+temperature_last: true
+dynamic_temperature: False
+smoothing_factor: 0.8
+min_p: 90
+repetition_penalty: 1.1

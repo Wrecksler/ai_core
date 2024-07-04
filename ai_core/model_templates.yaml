@@ -1,0 +1,51 @@
+(.*)daredevil(.*)?:
+  prompt_format: llama3-instruct
+  max_context: 8000
+  stop: ["<|im_end|>", "|im_end|", "<s>", "</s>", "<|eot_id|>", "<|start_header_id|>", "assistant\n"]
+(.*)qwen2(.*)?:
+  prompt_format: chatml
+  max_context: 30000
+  stop: ["<|im_end|>", "|im_end|", "<s>", "</s>", "<|eot_id|>", "<|start_header_id|>", "assistant\n"]
+(.*)higgs(.*)?:
+  prompt_format: llama3-instruct
+  max_context: 8000
+  stop: ["<|im_end|>", "|im_end|", "<s>", "</s>", "<|eot_id|>", "<|start_header_id|>", "assistant\n"]
+(.*)l3-aethora(.*)?:
+  prompt_format: llama3-instruct
+  max_context: 8000
+  stop: ["<|im_end|>", "|im_end|", "<s>", "</s>", "<|eot_id|>", "<|start_header_id|>", "assistant\n"]
+(.*)35b-beta-long(.*)?:
+  prompt_format: chatml
+  max_context: 128000
+  stop: ["<|im_end|>", "|im_end|", "<s>", "</s>", "<|eot_id|>", "<|start_header_id|>", "assistant\n"]
+(.*)L3-70B-Euryale-v2.1(.*)?:
+  prompt_format: chatml
+  max_context: 8000
+  stop: ["<|im_end|>", "|im_end|", "<s>", "</s>", "<|eot_id|>", "<|start_header_id|>", "assistant\n"]
+(.*)rp-stew(.*)?:
+  prompt_format: chat-vicuna
+  max_context: 32000 # 200000
+  stop: ["<|im_end|>", "</s>"]
+(.*)turbcat-instruct-8b(.*)?:
+  prompt_format: llama3-instruct
+  max_context: 8000 # 200000
+  stop: ["<|im_end|>", "</s>"]
+
+
+# This should be in the end! Cover-all for Llama 3 models, if there's L3 assume it's llama 3 and uses llama3-instruct template
+(.*)l3(.*)?:
+  prompt_format: llama3-instruct
+  max_context: 8000 # 200000
+  stop: ["<|im_end|>", "</s>"]
+(.*)?(llama-3)(.*)?:
+  prompt_format: llama3-instruct
+  max_context: 8000
+  stop: ["<|im_end|>", "|im_end|", "<s>", "</s>", "<|eot_id|>", "<|start_header_id|>", "assistant\n"]
+(.*)miqu(.*)?:
+  prompt_format: chatml
+  max_context: 30000
+  stop: ["</s>", "<|im_end|>" ,"<|im_start|>"]
+(.*)maid(.*)?:
+  prompt_format: chatml
+  max_context: 30000
+  stop: ["</s>", "<|im_end|>" ,"<|im_start|>"]

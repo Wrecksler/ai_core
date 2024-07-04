@@ -1,0 +1,8 @@
+temperature: 2.66
+temperature_last: true
+dynatemp_low: 0.5
+dynatemp_high: 2
+smoothing_factor: 0.23
+min_p: 0.1
+repetition_penalty_range: 0
+stop: ["<|im_end|>", "|im_end|", "<s>", "</s>", "<|eot_id|>", "<|start_header_id|>", "assistant\n"]

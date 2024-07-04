@@ -1,0 +1,9 @@
+loguru
+requests
+pyyaml
+jinja2
+pydantic
+cachetools
+nltk
+pillow
+transformers

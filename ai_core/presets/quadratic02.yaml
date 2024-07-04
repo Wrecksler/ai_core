@@ -1,0 +1,8 @@
+temperature: 0.7
+temperature_last: true
+dynamic_temperature: true
+dynatemp_low: 0.5
+dynatemp_high: 2
+smoothing_factor: 1.17
+min_p: 0.11
+repetition_penalty: 1.1
