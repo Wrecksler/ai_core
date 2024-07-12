@@ -3,7 +3,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='ai_core',
-    version="0.0.1",
+    version="0.0.2",
     # url='none',
     author='Wrecksler',
     author_email='wrecksler@gmail.com',

@@ -37,9 +37,14 @@ class AIMessage(Message):
 
 class Memory(BaseModel):
     messages_all: List[Message] = []
+    keep_max: int = 0
 
     def add_message(self, message):
         self.messages_all.append(message)
+
+        if self.keep_max > 0:
+            if len(self.messages_all) > self.keep_max:
+                self.messages_all.pop(0)
 
     @property
     def messages(self):
